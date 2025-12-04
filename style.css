@@ -12,6 +12,75 @@
     --color-light-bg: #FAFAFA; /* Jasne Tło */
     --color-text: #333333;   /* Ciemny Tekst */
     --color-white: #ffffff;
+
+    /* === COLOR PALETTE (Based on your website) === */
+    --chat--color--primary: #1C4E80;             /* Deep Blue */
+    --chat--color--primary-shade-50: #18446E;    /* Darker Blue */
+    --chat--color--primary--shade-100: #133856;  /* Even Darker Blue */
+
+    --chat--color--secondary: #F2C94C;           /* Gold Accent */
+    --chat--color-secondary-shade-50: #DAB441;   /* Slightly Darker Gold */
+
+    --chat--color-white: #ffffff;
+    --chat--color-light: #FAFAFA;                /* Light background */
+    --chat--color-light-shade-50: #F0F0F0;
+    --chat--color-light-shade-100: #E0E0E0;
+
+    --chat--color-medium: #D2D4D9;
+    --chat--color-dark: #333333;                 /* Text color */
+    --chat--color-disabled: #777980;
+    --chat--color-typing: #555555;
+
+    /* === SPACING / RADIUS / TRANSITIONS === */
+    --chat--spacing: 1rem;
+    --chat--border-radius: 0.5rem;
+    --chat--transition-duration: 0.2s;
+
+    /* === WINDOW DIMENSIONS === */
+    --chat--window--width: 400px;
+    --chat--window--height: 600px;
+
+    /* === HEADER === */
+    --chat--header-height: auto;
+    --chat--header--padding: var(--chat--spacing);
+    --chat--header--background: var(--chat--color--primary);
+    --chat--header--color: var(--chat--color-white);
+    --chat--header--border-top: none;
+    --chat--header--border-bottom: none;
+    --chat--heading--font-size: 1.6em;
+    --chat--subtitle--font-size: 0.9em;
+    --chat--subtitle--line-height: 1.6;
+
+    /* === MESSAGES === */
+    --chat--message--font-size: 1rem;
+    --chat--message--padding: var(--chat--spacing);
+    --chat--message--border-radius: var(--chat--border-radius);
+    --chat--message-line-height: 1.6;
+
+    /* Bot bubble = white with dark text */
+    --chat--message--bot--background: var(--chat--color-white);
+    --chat--message--bot--background: #eee;
+    --chat--message--bot--color: var(--chat--color-dark);
+    --chat--message--bot--border: 1px solid var(--chat--color-light-shade-100);
+
+    /* User bubble = primary blue */
+    --chat--message--user--background: var(--chat--color--primary);
+    --chat--message--user--color: var(--chat--color-white);
+    --chat--message--user--border: none;
+
+    /* Preformatted code blocks */
+    --chat--message--pre--background: rgba(0, 0, 0, 0.05);
+
+    /* === INPUT FIELD === */
+    --chat--textarea--height: 50px;
+
+    /* === CHAT TOGGLE BUTTON (floating launcher) === */
+    --chat--toggle--background: var(--chat--color--secondary); /* Gold */
+    --chat--toggle--hover--background: var(--chat--color-secondary-shade-50);
+    --chat--toggle--active--background: #C9A337; /* Deeper gold */
+    --chat--toggle--color: var(--chat--color-dark);
+    --chat--toggle--size: 64px;
+
 }
 
 body {
@@ -372,4 +441,12 @@ footer p {
         flex-direction: column;
         gap: 20px;
     }
+}
+
+.chat-window-wrapper .chat-window {
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.chat-heading h1 {
+    margin-bottom: 0px;
 }

@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sala Bankietowa Promyk | Bydgoszcz</title>
+    <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
     <link href="style.css" rel="stylesheet">
-    </head>
+</head>
 <body>
 
     <header class="main-header">
@@ -128,6 +129,39 @@
             <p>&copy; 2025 Sala Bankietowa Promyk. Wszelkie prawa zastrzeżone.</p>
         </div>
     </footer>
+
+    <script type="module">
+        import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+        createChat({
+            webhookUrl: 'https://piotr110-20110.wykr.es/webhook/887091e6-9241-47f7-bef6-0d74285bfc03/chat',
+            webhookConfig: {
+                method: 'POST',
+                headers: {}
+            },
+            target: '#n8n-chat',
+            mode: 'window',
+            chatInputKey: 'chatInput',
+            chatSessionKey: 'sessionId',
+            loadPreviousSession: true,
+            metadata: {},
+            showWelcomeScreen: false,
+            defaultLanguage: 'pl',
+            initialMessages: [
+                'Masz pytania odnośnie rezerwacji sali, dostępnych terminów, naszej oferty, menu?',
+                'Pomogę udzielić odpowiedzi na twoje pytania.'
+            ],
+            i18n: {
+                pl: {
+                    title: 'Sala Weselna Promyk',
+                    subtitle: 'Udzielam informacji 24/7',
+                    footer: '',
+                    getStarted: 'New Conversation',
+                    inputPlaceholder: 'Zadaj pytanie',
+                },
+            },
+            enableStreaming: false,
+        });
+    </script>
 
 </body>
 </html>
