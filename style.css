@@ -189,6 +189,7 @@ p {
     /* To byłoby prawdziwe zdjęcie w tle, ale używamy koloru/gradientu jako placeholder */
     background: linear-gradient(rgba(28, 78, 128, 0.7), rgba(28, 78, 128, 0.7)), #1C4E80; /* Ciemny niebieski z gradientem */
     height: 60vh;
+    padding: 40px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -245,7 +246,7 @@ p {
 .primary-btn:hover {
     background-color: var(--color-primary);
     color: var(--color-white);
-    border: 2px solid var(--color-primary);
+    border: 2px solid var(--color-white);
     box-shadow: rgba(0,0,0,0.6) 0px 0px 10px;
 }
 
@@ -420,7 +421,7 @@ footer p {
     }
 
     .hero-content h1 {
-        font-size: 2.5em;
+        font-size: 2em;
     }
 
     .about-flex {
